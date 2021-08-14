@@ -5,7 +5,6 @@ mfypublic是基于webdriver开发的一个功能扩展库，关于mfypublic最�
 
 获取日志\
 读取excel数据\
-自动获取电脑上的路径\
 读取json文件\
 读取yaml文件
 
