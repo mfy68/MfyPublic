@@ -7,29 +7,9 @@
 # -----------------------------------------------------------------------------------
 import json
 import openpyxl
-import configparser
-import os
 import yaml
 
-from mfypublic.get_path import get_file_path
-
-
 class ReadData:
-
-    def get_file_path(self, pro_name, ini_path, section_name, file_name):
-        """
-        读取ini文件，获取完整路径
-        :param pro_name: 项目名字
-        :param ini_path: ini文件在项目中的路径
-        :param section_name: ini文件中section的名字
-        :param file_name: ini文件中配置的路径的名字
-        :return:
-        """
-        config = configparser.ConfigParser()
-        before_path = get_file_path(pro_name)
-        config.read(os.path.join(before_path, ini_path))
-        path = config.get(section_name, file_name)
-        return os.path.join(before_path, path)
 
     def get_excel_data(self, path, sheet_name):
         """

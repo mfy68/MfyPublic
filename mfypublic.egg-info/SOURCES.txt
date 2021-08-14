@@ -6,7 +6,6 @@ mfypublic/__init__.py
 mfypublic/baseone.py
 mfypublic/basetwo.py
 mfypublic/get_log.py
-mfypublic/get_path.py
 mfypublic/read_data.py
 mfypublic.egg-info/PKG-INFO
 mfypublic.egg-info/SOURCES.txt

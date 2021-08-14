@@ -10,7 +10,7 @@ import sys
 
 def get_logging(log_path):
     # 实例化对象
-    log = logging.Logger("pro_ranzhi28")
+    log = logging.Logger("name")
     # 设置格式
     set_format = logging.Formatter("[%(filename)s][%(asctime)s]:%(message)s")
 
