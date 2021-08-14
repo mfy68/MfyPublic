@@ -36,7 +36,7 @@ def read_json_data(path):
     with open(path, encoding="utf8") as j_file:
         return json.load(j_file)
 
-def get_yaml_data(self, path):
+def get_yaml_data(path):
     """
     读取yaml文件数据
     :param path: yaml文件路径
