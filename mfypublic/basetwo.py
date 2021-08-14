@@ -69,10 +69,8 @@ class Base:
         else:
             raise NameError("请输入正确的定位方式！！！")
         if num == "dan":
-            # return self.driver.find_element(*locator)  # *表示解包元组
             return WebDriverWait(self.driver, 20, 1).until(ec.presence_of_element_located(locator))
         else:
-            # return self.driver.find_elements(*locator)
             return WebDriverWait(self.driver, 20, 1).until(ec.presence_of_all_elements_located(locator))
 
     def send_keys(self, location, value, text):
@@ -120,15 +118,15 @@ class Base:
         """
         self.driver.switch_to.parent_frame()
 
-    def choice_sex(self, location, value):
+    def random_choice(self, location, value):
         """
         随机选择性别
         :param location: 定位方法
         :param value: 定位方法所对应的值
         :return:
         """
-        sex = self._location_element(location, value, num="shuang")
-        random.choice(sex).click()
+        eles = self._location_element(location, value, num="shuang")
+        random.choice(eles).click()
 
     def select_by_index(self, location, value, num):
         """
@@ -227,5 +225,4 @@ class Base:
         :return:
         """
         self.driver.get_screenshot_as_file(filename)
-
 

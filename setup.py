@@ -13,7 +13,7 @@ with open("README.md", "r", encoding='utf8') as fh:
 
 setup(
     name='mfypublic',
-    version='1.1.2',
+    version='1.1.3',
     author='MingFeiyang',
     author_email='mfy1102@163.com',
     url='https://pypi.org/project/mfypublic',

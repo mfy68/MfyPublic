@@ -125,7 +125,6 @@ class Base:
         """
         ele = self._locator_element(selector)
         WebDriverWait(self.driver, 20, 1).until(EC.frame_to_be_available_and_switch_to_it(ele))
-        # self.driver.switch_to.frame(ele)
 
     def switch_to_default_content(self):
         """
